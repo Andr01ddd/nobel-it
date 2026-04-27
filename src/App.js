@@ -9,12 +9,16 @@ import Technical from "./courses/technical.js";
 import Personality from "./courses/personality.js";
 import NonTechnical from "./courses/non-technical.js";
 
+import Footer from "./components/Footer.js";
+import Navbar from "./components/Navbar.js";
+
 
 function App() {
   return (
     <>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Layout />}/>
+        <Route path="/" element={<Layout />} />
         <Route index  element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="technical-courses" element={<Technical />} />
@@ -23,6 +27,7 @@ function App() {
         <Route path="services" element={<Services />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </>
   );
 }
