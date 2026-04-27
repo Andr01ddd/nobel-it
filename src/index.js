@@ -14,7 +14,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <BrowserRouter>
+  <BrowserRouter basename="/nobel-it/">
     <App />
   </BrowserRouter>
   </React.StrictMode>
