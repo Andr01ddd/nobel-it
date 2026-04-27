@@ -1,8 +1,7 @@
 import React from "react";
-import Navbar from "./components/Navbar.js"
+import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout.js";
 import Home from "./components/Home.js";
-import { Routes, Route } from "react-router-dom";
 import About from "./about-us/about.js";
 import Contact from "./contact-us/contact.js";
 import Services from "./services/service.js";
@@ -14,9 +13,8 @@ import NonTechnical from "./courses/non-technical.js";
 function App() {
   return (
     <>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Layout/>} />
+        <Route path="/" element={<Layout />}/>
         <Route index  element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="technical-courses" element={<Technical />} />
