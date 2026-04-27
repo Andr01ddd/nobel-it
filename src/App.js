@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./components/Navbar.js"
-import Footer from "./components/Footer.js";
 import Layout from "./components/Layout.js";
 import Home from "./components/Home.js";
 import { Routes, Route } from "react-router-dom";
@@ -19,14 +18,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout/>} />
         <Route index  element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/technical-courses" element={<Technical />} />
-        <Route path="/personality-development-courses" element={<Personality />} />
-        <Route path="/non-technical-courses" element={<NonTechnical />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="about" element={<About />} />
+        <Route path="technical-courses" element={<Technical />} />
+        <Route path="personality-development-courses" element={<Personality />} />
+        <Route path="non-technical-courses" element={<NonTechnical />} />
+        <Route path="services" element={<Services />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
-      <Footer />
     </>
   );
 }
