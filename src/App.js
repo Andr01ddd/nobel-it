@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, BrowserRouter, HashRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Layout from "./components/Layout.js";
 import Home from "./components/Home.js";
 import About from "./about-us/about.js";
@@ -11,8 +11,7 @@ import NonTechnical from "./courses/non-technical.js";
 
 function App() {
   return (
-    <>
-      <HashRouter basename="/nobel-it">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -24,10 +23,8 @@ function App() {
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
-      </HashRouter>
-    </>
+    </HashRouter>
   );
 }
 
 export default App;
-
