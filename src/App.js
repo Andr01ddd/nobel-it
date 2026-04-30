@@ -12,7 +12,7 @@ import NonTechnical from "./courses/non-technical.js";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/nobel-it">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
